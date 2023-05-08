@@ -16,7 +16,7 @@ import type { ID, CustomizedQuiz, DraftQuestion } from './types'
 type Params = CustomizedQuiz & { onClick: (quizId: ID) => void }
 const QuizCard = ({ id, questions, customQuestions, onClick }: Params) => (
   <Link
-    className="bp3-card bp3-elevation-1 bp3-interactive"
+    className="bp4-card bp4-elevation-1 bp4-interactive"
     tabIndex="0"
     role="button"
     onClick={() => onClick(id)}
@@ -52,7 +52,7 @@ const Questions = ({
         <Question key={i}>
           {question.content}
           <QuestionType
-            className={`bp3-icon-standard bp3-icon-${
+            className={`bp4-icon-standard bp4-icon-${
               question.options.length > 0 ? 'properties' : 'comment'
             }`}
           />
@@ -65,12 +65,12 @@ export const Link = styled.a`
   color: white !important;
   background-color: #446583aa;
 
-  .bp3-non-ideal-state {
+  .bp4-non-ideal-state {
     height: auto;
     margin-top: 3em;
   }
 
-  & .bp3-non-ideal-state-icon .bp3-icon {
+  & .bp4-non-ideal-state-icon .bp4-icon {
     color: rgba(191, 204, 214, 0.5) !important;
   }
 `

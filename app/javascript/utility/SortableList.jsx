@@ -63,20 +63,20 @@ type ChildProps<Item> = {
 
 const Handle = SortableHandle(() => (
   <span
-    className="bp3-button bp3-icon-drag-handle-horizontal bp3-fixed"
+    className="bp4-button bp4-icon-drag-handle-horizontal bp4-fixed"
     style={{ marginRight: -3 }}
   />
 ))
 
 const Item = SortableElement(
   ({ item, index, render: Render, onChangeItem, onRemove }: ItemProps<*>) => (
-    <div className="bp3-control-group bp3-fill" style={{ marginBottom: '0.5em' }}>
+    <div className="bp4-control-group bp4-fill" style={{ marginBottom: '0.5em' }}>
       <Handle />
 
       <Render item={item} index={index} onChangeItem={onChangeItem} />
 
       <Button
-        className="bp3-fixed"
+        className="bp4-fixed"
         intent={Intent.DANGER}
         icon="delete"
         onClick={onRemove}
@@ -114,7 +114,7 @@ const SortableList = (props: Props<*>) => (
     {...props}
     useDragHandle={true}
     transitionDuration={100}
-    helperClass={`sortable-helper${props.dark ? ' bp3-dark' : ''}`}
+    helperClass={`sortable-helper${props.dark ? ' bp4-dark' : ''}`}
     onSortEnd={({ oldIndex, newIndex }) =>
       props.onChange(arrayMove(props.items, oldIndex, newIndex))
     }
@@ -133,7 +133,7 @@ export function createSortableInput ({
     onChangeItem,
   }: ChildProps<string> & { intl: IntlShape }) => (
     <input
-      className="bp3-input"
+      className="bp4-input"
       type="text"
       placeholder={placeholderId && intl.formatMessage({ id: placeholderId })}
       {...props}

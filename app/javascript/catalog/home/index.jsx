@@ -57,7 +57,7 @@ function Home() {
               // $FlowFixMe
               <React.Suspense
                 fallback={
-                  <CatalogSection className="bp3-skeleton">
+                  <CatalogSection className="bp4-skeleton">
                     Loading...
                   </CatalogSection>
                 }

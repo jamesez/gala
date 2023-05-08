@@ -2,9 +2,9 @@
   = form_for kase, url: case_library_path(kase),
                     builder: BlueprintFormBuilder do |f|
     = f.form_group :library_id do |f, error_classes|
-      .bp3-control-group
-        .bp3-select.bp3-fill{class: error_classes}
+      .bp4-control-group
+        .bp4-select.bp4-fill{class: error_classes}
           = f.select :library_id, libraries.map { |l| [l.name, l.id]  },
                      include_blank: t('activerecord.models.shared_cases_library')
         = f.submit I18n.t('cases.settings.edit.change_library'),
-                   class: %w[bp3-button bp3-intent-success]
+                   class: %w[bp4-button bp4-intent-success]

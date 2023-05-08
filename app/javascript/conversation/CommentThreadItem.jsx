@@ -209,7 +209,7 @@ const CommentThreadLink = styled(Link)`
     }
   }
 
-  .bp3-focus-disabled & {
+  .bp4-focus-disabled & {
     border: none;
     padding: 14px 18px;
     border-bottom: 1px solid #bfbdac;

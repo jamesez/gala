@@ -38,18 +38,18 @@ feature 'Customizing a deployment' do
       click_button 'Add question'
       fill_in placeholder: 'Question text', with: 'What is the color of the sky?'
       click_button 'Add option', match: :first
-      find('.bp3-control-group .bp3-input').send_keys "Blue\nYellow\nRed\nGreen"
+      find('.bp4-control-group .bp4-input').send_keys "Blue\nYellow\nRed\nGreen"
       click_button 'Deploy'
       expect(page).to have_content 'Please'
-      all('.bp3-radio').first.click
+      all('.bp4-radio').first.click
       click_button 'Deploy'
 
       click_link 'Edit Quiz'
-      expect(page).to have_selector '.bp3-input[value="What is the color of the sky?"]'
+      expect(page).to have_selector '.bp4-input[value="What is the color of the sky?"]'
       click_button 'Add question'
       click_button 'Deploy'
       expect(page).to have_content 'Please'
-      all('input.bp3-input').last.set('Why is it that color?')
+      all('input.bp4-input').last.set('Why is it that color?')
       click_button 'Deploy'
       expect(page).to have_content 'Please'
       find('textarea').set 'Because it is.'

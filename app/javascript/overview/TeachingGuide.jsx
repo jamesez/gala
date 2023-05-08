@@ -99,14 +99,14 @@ const Container = styled.div`
   margin-top: 1em;
   position: relative;
 
-  .bp3-icon {
+  .bp4-icon {
     margin-right: 0.5em;
     vertical-align: middle;
   }
 `
 
 const DeleteButton = styled.button.attrs({
-  className: 'bp3-button bp3-minimal bp3-icon-trash bp3-intent-danger',
+  className: 'bp4-button bp4-minimal bp4-icon-trash bp4-intent-danger',
 })`
   margin-left: 0.5em;
 `

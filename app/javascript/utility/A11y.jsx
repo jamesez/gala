@@ -40,7 +40,7 @@ export const LabelForScreenReaders = styled.div`
     ${p =>
       p.visibleBelowMaxWidth ||
       css`
-        html:not(.bp3-focus-disabled) & {
+        html:not(.bp4-focus-disabled) & {
           background-color: black;
           color: white;
           font-family: ${p => p.theme.sansFont};

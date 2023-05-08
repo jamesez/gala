@@ -41,7 +41,7 @@ export const Dialog = styled(BaseDialog)`
 `
 
 // $FlowFixMe
-export const Body = styled.div.attrs({ className: 'bp3-dialog-body' })`
+export const Body = styled.div.attrs({ className: 'bp4-dialog-body' })`
   align-items: flex-start;
   display: flex;
   flex-flow: row;

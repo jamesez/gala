@@ -188,8 +188,8 @@ en:
   cards:
     edit:
       citation_added: |
-        Citation added. Click the <span class="bp3-tag bp3-intent-success">
-        <span class="bp3-icon bp3-icon-ring"></span> Citation Marker</span> to
+        Citation added. Click the <span class="bp4-tag bp4-intent-success">
+        <span class="bp4-icon bp4-icon-ring"></span> Citation Marker</span> to
         edit.
       citation_text: Title
       citation_url: URL
@@ -598,8 +598,8 @@ en:
     new:
       make_selection_html: >
         Please select the phrase that you would like to attach an Edgenote to,
-        then click the <span class="bp3-tag">
-        <span class="bp3-icon bp3-icon-add-column-right"></span> Add
+        then click the <span class="bp4-tag">
+        <span class="bp4-icon bp4-icon-add-column-right"></span> Add
         Edgenote</span> button.
       new_edgenote: New Edgenote
   editorships:

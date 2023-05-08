@@ -114,7 +114,7 @@ const EdgenoteForm = ({
       <Field
         name="altText"
         label="activerecord.attributes.edgenote.altText"
-        intent={(contents.altText && !!contents.altText.length) ? '' : 'bp3-intent-danger'}
+        intent={(contents.altText && !!contents.altText.length) ? '' : 'bp4-intent-danger'}
         helperText={
           <Markdown
             source={intl.formatMessage({
@@ -130,7 +130,7 @@ const EdgenoteForm = ({
       <Field
         name="photoCredit"
         label="activerecord.attributes.edgenote.photoCredit"
-        intent={!!contents.photoCredit.length ? '' : 'bp3-intent-danger'}
+        intent={!!contents.photoCredit.length ? '' : 'bp4-intent-danger'}
         render={props => <Input {...props} />}
         helperText={
           <Markdown
@@ -253,7 +253,7 @@ const Field = ({
   </FormGroup>
 )
 
-const Input = styled.input.attrs({ className: 'bp3-input bp3-fill' })``
+const Input = styled.input.attrs({ className: 'bp4-input bp4-fill' })``
 const TextArea = Input.withComponent('textarea')
 
 const FileField = (
@@ -269,7 +269,7 @@ const FileField = (
       <Field
         {...props}
         render={({ disabled, placeholder }) => (
-          <label className="bp3-file-input bp3-fill">
+          <label className="bp4-file-input bp4-fill">
             <input
               accept={props.accept}
               type="file"
@@ -278,7 +278,7 @@ const FileField = (
                 props.onChangeAttachment(props.name, e.target.files)
               }
             />
-            <span className="bp3-file-upload-input">
+            <span className="bp4-file-upload-input">
               {fileList && fileList.length > 0
                 ? fileList.item(0).name
                 : placeholder}
@@ -334,15 +334,15 @@ const Row = styled.div`
   display: flex;
   align-items: flex-start;
 
-  .bp3-form-group label.bp3-label:empty {
+  .bp4-form-group label.bp4-label:empty {
     margin-bottom: 0;
   }
 
-  .bp3-form-group {
+  .bp4-form-group {
     flex: 1;
   }
 
-  .bp3-button {
+  .bp4-button {
     margin: 0 0 15px 6px;
   }
 `

@@ -82,7 +82,7 @@ const Tags = styled.div`
     margin-right: 6px;
   }
 
-  .bp3-progress-bar {
+  .bp4-progress-bar {
     border-radius: 2pt;
     bottom: 0;
     height: 100%;
@@ -90,14 +90,14 @@ const Tags = styled.div`
     mix-blend-mode: hard-light;
     position: absolute;
 
-    .bp3-progress-meter {
+    .bp4-progress-meter {
       border-radius: 2pt;
     }
   }
 `
 
 const ButtonLabel = styled.label.attrs({
-  className: 'bp3-button bp3-minimal bp3-icon-paperclip',
+  className: 'bp4-button bp4-minimal bp4-icon-paperclip',
 })``
 
 const FileInput = styled.input.attrs({ type: 'file' })`

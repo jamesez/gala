@@ -63,7 +63,7 @@ class MainMenu extends React.Component<{ intl: IntlShape }, Reader> {
       </Row>
     ) : (
       <AnchorButton
-        className="bp3-minimal"
+        className="bp4-minimal"
         icon="log-in"
         text={formatMessage({ id: 'devise.sessions.new.signIn' })}
         href="/readers/sign_in"
@@ -75,7 +75,7 @@ class MainMenu extends React.Component<{ intl: IntlShape }, Reader> {
 export default injectIntl(MainMenu)
 
 const HelpButton = injectIntl(styled.a.attrs({
-  className: 'bp3-button bp3-minimal bp3-icon-help',
+  className: 'bp4-button bp4-minimal bp4-icon-help',
   href: 'https://docs.learngala.com',
   target: '_blank',
   rel: 'noopener noreferrer',
@@ -91,7 +91,7 @@ const HelpButton = injectIntl(styled.a.attrs({
 `)
 
 const CaretDown = styled.span.attrs({
-  className: 'bp3-icon bp3-icon-caret-down',
+  className: 'bp4-icon bp4-icon-caret-down',
 })`
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.5);

@@ -33,7 +33,7 @@ function Announcements ({ intl }: { intl: IntlShape }) {
             aria-label={intl.formatMessage({
               id: 'announcements.dismissals.create.dismissAnnouncement',
             })}
-            className="bp3-button bp3-minimal bp3-icon-cross bp3-intent-primary"
+            className="bp4-button bp4-minimal bp4-icon-cross bp4-intent-primary"
             onClick={handleDismissAnnouncement}
           />
         </Dismiss>
@@ -58,7 +58,7 @@ export default injectIntl(Announcements)
 
 // $FlowFixMe
 const Container = styled.aside.attrs({
-  className: 'bp3-callout bp3-icon-star bp3-elevation-2',
+  className: 'bp4-callout bp4-icon-star bp4-elevation-2',
 })`
   background-color: hsl(254, 100%, 87%);
   display: grid;

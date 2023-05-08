@@ -45,12 +45,12 @@ function CaseChooser ({ cases, intl, onSelect }: Props) {
 
         <form onSubmit={handleSearch}>
           <InputGroup
-            className="bp3-round"
+            className="bp4-round"
             leftIcon="search"
             name="q"
             rightElement={
               <button
-                className="bp3-button bp3-minimal bp3-icon-arrow-right"
+                className="bp4-button bp4-minimal bp4-icon-arrow-right"
                 type="submit"
               />
             }
@@ -113,7 +113,7 @@ function CaseChooser ({ cases, intl, onSelect }: Props) {
 
 export default injectIntl(CaseChooser)
 
-const Container = styled.div.attrs({ className: 'bp3-card' })`
+const Container = styled.div.attrs({ className: 'bp4-card' })`
   &:not(:first-child) {
     margin-top: 64px;
   }

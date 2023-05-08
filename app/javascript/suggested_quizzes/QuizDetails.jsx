@@ -81,7 +81,7 @@ function QuizDetails ({
 
   return (
     <>
-      <div className="bp3-dialog-body">
+      <div className="bp4-dialog-body">
         <FormGroup label="Quiz title" labelFor="quiz[title]">
           <TitleField
             id="quiz[title]"
@@ -99,8 +99,8 @@ function QuizDetails ({
         </Card>
       </div>
 
-      <div className="bp3-dialog-footer">
-        <div className="bp3-dialog-footer-actions">
+      <div className="bp4-dialog-footer">
+        <div className="bp4-dialog-footer-actions">
           <Button intent={Intent.PRIMARY} onClick={handleSave}>
             <FormattedMessage id="helpers.save" />
           </Button>
@@ -130,7 +130,7 @@ const TitleField = styled(InputGroup).attrs({
 })``
 
 const Card = styled.ol.attrs({
-  className: 'bp3-card',
+  className: 'bp4-card',
 })`
   padding: 1em 1em 1em 2em;
 `

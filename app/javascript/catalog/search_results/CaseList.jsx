@@ -54,12 +54,12 @@ const Kicker = styled.span`
   display: block;
   font-weight: 600;
 `
-const Title = styled.div.attrs({ className: 'bp3-dark' })`
+const Title = styled.div.attrs({ className: 'bp4-dark' })`
   line-height: 1.3;
 `
 
 const ForthcomingTag = styled.span.attrs({
-  className: 'bp3-tag bp3-minimal',
+  className: 'bp4-tag bp4-minimal',
 })`
   margin-left: 0.5em;
   font-weight: 500;

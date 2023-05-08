@@ -81,7 +81,7 @@ export const UnconnectedCommunityChooser = injectIntl(
                 disabled={!anyCommunitiesPresent}
                 content={
                   <CommunityMenu>
-                    <li className="bp3-menu-header">
+                    <li className="bp4-menu-header">
                       <h6>
                         <FormattedMessage id="communities.index.chooseACommunity" />
                       </h6>
@@ -96,7 +96,7 @@ export const UnconnectedCommunityChooser = injectIntl(
                         key={c.param || 'null'}
                         icon={communityIcon(c)}
                         className={
-                          c.active ? 'bp3-active bp3-intent-primary' : ''
+                          c.active ? 'bp4-active bp4-intent-primary' : ''
                         }
                         text={c.name}
                         onClick={() => {
@@ -124,7 +124,7 @@ export const UnconnectedCommunityChooser = injectIntl(
                   >
                     <>
                       <span
-                        className={`bp3-icon bp3-icon-${communityIcon(
+                        className={`bp4-icon bp4-icon-${communityIcon(
                           activeCommunity,
                           {
                             disabled: !activeCommunityPresent,
@@ -203,7 +203,7 @@ const CommunityName = styled.a.attrs({
     outline: none;
     color: inhert;
 
-    & .bp3-icon + span {
+    & .bp4-icon + span {
       text-decoration: ${({ disabled }) => (disabled ? '' : 'underline')};
     }
   }

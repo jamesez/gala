@@ -15,7 +15,7 @@ export const Title = styled.h2`
 `
 
 // $FlowFixMe
-export const OuterContainer = styled.div.attrs({ className: 'bp3-dark' })``
+export const OuterContainer = styled.div.attrs({ className: 'bp4-dark' })``
 
 // $FlowFixMe
 export const Container = styled.nav.attrs(p => ({
@@ -99,20 +99,20 @@ export const ElementIcon = styled(Label)`
 // $FlowFixMe
 export const Actions = styled.div.attrs({
   className: props =>
-    `c-toc__actions bp3-button-group bp3-fill ${
-      props.vertical ? 'bp3-vertical' : ''
+    `c-toc__actions bp4-button-group bp4-fill ${
+      props.vertical ? 'bp4-vertical' : ''
     }`,
 })``
 
 // $FlowFixMe
 export const AddButton = styled.button.attrs({
   type: 'button',
-  className: 'bp3-button bp3-icon-add',
+  className: 'bp4-button bp4-icon-add',
 })``
 
 // $FlowFixMe
 export const AssessmentButton = styled(Link).attrs({
-  className: 'bp3-button bp3-fill bp3-icon-properties bp3-intent-success',
+  className: 'bp4-button bp4-fill bp4-icon-properties bp4-intent-success',
 })`
   margin-top: 1em;
 `

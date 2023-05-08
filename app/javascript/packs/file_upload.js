@@ -20,9 +20,9 @@ const filenameFromPath = path =>
     .pop()
 
 // Display the filename in Blueprint file inputs when a user has selected one
-document.querySelectorAll('.bp3-file-input').forEach(fileInput => {
+document.querySelectorAll('.bp4-file-input').forEach(fileInput => {
   const hiddenInput = fileInput.querySelector('input[type=file]')
-  const displayElement = fileInput.querySelector('.bp3-file-upload-input')
+  const displayElement = fileInput.querySelector('.bp4-file-upload-input')
   if (hiddenInput == null || displayElement == null) return
 
   hiddenInput.addEventListener('change', e => {
@@ -42,10 +42,10 @@ addEventListener('direct-upload:initialize', ({ target, detail }) => {
     html`
       <div>
         Uploading ${file.name}...
-        <div class="bp3-progress-bar bp3-intent-primary">
+        <div class="bp4-progress-bar bp4-intent-primary">
           <div
             id="direct-upload-progress-${id}"
-            class="bp3-progress-meter"
+            class="bp4-progress-meter"
             style="width: 0%"
           />
         </div>
@@ -67,5 +67,5 @@ addEventListener('direct-upload:end', ({ detail }) => {
   if (progressBar == null) return
 
   progressBar.style.width = '100%'
-  progressBar.classList.add('bp3-no-animation')
+  progressBar.classList.add('bp4-no-animation')
 })

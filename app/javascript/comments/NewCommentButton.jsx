@@ -111,7 +111,7 @@ function selectionNotUnique (editorState: EditorState): boolean {
   return card.split(selection).length > 2
 }
 
-const Container = styled.div.attrs({ className: 'bp3-dark' })`
+const Container = styled.div.attrs({ className: 'bp4-dark' })`
   display: flex;
   width: 100%;
   @media (max-width: 513px) {
@@ -133,7 +133,7 @@ const FlexTooltip = styled(Tooltip)`
 `
 
 const StyledButton = styled(Button).attrs({
-  className: 'bp3-intent-primary bp3-fill',
+  className: 'bp4-intent-primary bp4-fill',
 })`
   font-size: 11pt;
   color: white;

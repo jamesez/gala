@@ -12,7 +12,7 @@ import { FormattedMessage } from 'react-intl'
 const ValueProposition = () => (
   <Container>
     <Block icon="add-row-bottom" theme="red">
-      <h2 className="bp3-callout-title">
+      <h2 className="bp4-callout-title">
         <FormattedMessage id="catalog.impactfulCases" />
       </h2>
       <p>
@@ -21,7 +21,7 @@ const ValueProposition = () => (
     </Block>
 
     <Block icon="social-media" theme="green">
-      <h2 className="bp3-callout-title">
+      <h2 className="bp4-callout-title">
         <FormattedMessage id="catalog.innovativeTeaching" />
       </h2>
       <p>
@@ -30,7 +30,7 @@ const ValueProposition = () => (
     </Block>
 
     <Block icon="git-new-branch" theme="blue">
-      <h2 className="bp3-callout-title">
+      <h2 className="bp4-callout-title">
         <FormattedMessage id="catalog.inclusiveCommunity" />
       </h2>
       <p>
@@ -42,7 +42,7 @@ const ValueProposition = () => (
 export default ValueProposition
 
 // $FlowFixMe
-const Container = styled.aside.attrs({ className: 'bp3-dark' })`
+const Container = styled.aside.attrs({ className: 'bp4-dark' })`
   color: white;
   display: grid;
   font-family: tenso;
@@ -77,9 +77,9 @@ const Container = styled.aside.attrs({ className: 'bp3-dark' })`
 `
 
 const intents = {
-  red: 'bp3-intent-danger',
-  green: 'bp3-intent-success',
-  blue: 'bp3-intent-primary',
+  red: 'bp4-intent-danger',
+  green: 'bp4-intent-success',
+  blue: 'bp4-intent-primary',
 }
 
 const contrastColors = {
@@ -89,7 +89,7 @@ const contrastColors = {
 }
 
 const Block = styled.div.attrs(({ theme, icon }) => ({
-  className: `bp3-callout ${intents[theme]} bp3-icon-${icon}`,
+  className: `bp4-callout ${intents[theme]} bp4-icon-${icon}`,
 }))`
   padding: 1.25em;
 
@@ -98,7 +98,7 @@ const Block = styled.div.attrs(({ theme, icon }) => ({
   }
 
   &::before,
-  .bp3-callout-title {
+  .bp4-callout-title {
     color: ${p => contrastColors[p.theme]} !important;
   }
 `

@@ -25,12 +25,12 @@
 }
 
 .spaced, .spaced--compact {
-  * + label.bp3-label {
+  * + label.bp4-label {
     margin: 1em 0 0;
   }
 
-  .non-spaced, .bp3-form-group, .bp3-callout, .bp3-control-group, .bp3-input-group,
-  .bp3-button-group, .bp3-file-input {
+  .non-spaced, .bp4-form-group, .bp4-callout, .bp4-control-group, .bp4-input-group,
+  .bp4-button-group, .bp4-file-input {
     * + * {
       margin-top: 0;
     }
@@ -38,8 +38,8 @@
 }
 
 .row, .row-compact {
-  .non-spaced, .bp3-form-group, .bp3-callout, .bp3-control-group, .bp3-input-group,
-  .bp3-button-group, .bp3-file-input {
+  .non-spaced, .bp4-form-group, .bp4-callout, .bp4-control-group, .bp4-input-group,
+  .bp4-button-group, .bp4-file-input {
     * + * {
       margin-left: 0;
     }

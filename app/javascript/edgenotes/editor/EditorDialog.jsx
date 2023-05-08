@@ -106,10 +106,10 @@ const EditorDialog = ({
           />
         </Column>
       </Body>
-      <div className="bp3-dialog-footer">
-        <div className="bp3-dialog-footer-actions">
+      <div className="bp4-dialog-footer">
+        <div className="bp4-dialog-footer-actions">
           <a
-            className="bp3-button bp3-icon-help"
+            className="bp4-button bp4-icon-help"
             href="https://docs.learngala.com/docs"
             target="_blank"
             rel="noopener noreferrer"

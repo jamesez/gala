@@ -5,17 +5,17 @@
     Sentry.showReportDialog(#{raw report_dialog_options.to_json})
   }
 
-.bp3-dark
-  .bp3-non-ideal-state
-    .bp3-non-ideal-state-visual.bp3-non-ideal-state-icon
-      %span.bp3-icon.bp3-icon-error
+.bp4-dark
+  .bp4-non-ideal-state
+    .bp4-non-ideal-state-visual.bp4-non-ideal-state-icon
+      %span.bp4-icon.bp4-icon-error
 
-    %h4.bp3-non-ideal-state-title 500 Internal Server Error
+    %h4.bp4-non-ideal-state-title 500 Internal Server Error
 
-    .bp3-non-ideal-state-description
+    .bp4-non-ideal-state-description
       %p That’s not supposed to happen.
 
-    .bp3-non-ideal-state-action
-      %button.bp3-button.bp3-intent-primary.bp3-icon-comment{ type: "button",
+    .bp4-non-ideal-state-action
+      %button.bp4-button.bp4-intent-primary.bp4-icon-comment{ type: "button",
                                                            onclick: 'reportFeedback()'}
         Report Feedback

@@ -34,7 +34,7 @@ function AboutLinksList(props) {
     <li key={index}>
       <a
         href={link.href}
-        className={`aboutLinks bp3-button bp3-minimal bp3-icon-${link.icon}`}
+        className={`aboutLinks bp4-button bp4-minimal bp4-icon-${link.icon}`}
       >
         <FormattedMessage id={`catalog.welcomeMessage.${link.message}`} />
       </a>
@@ -101,7 +101,7 @@ export default function WelcomeMessage() {
 }
 
 // $FlowFixMe
-const Container = styled.aside.attrs({ className: 'bp3-dark' })`
+const Container = styled.aside.attrs({ className: 'bp4-dark' })`
   color: white;
   font-family: tenso;
   grid-area: welcome-message;

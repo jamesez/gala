@@ -145,8 +145,8 @@ export const ElementText = styled.span`
   margin: 0 14px;
   line-height: 1.1;
 
-  .bp3-tooltip.bp3-dark &,
-  .bp3-dark .bp3-tooltip & {
+  .bp4-tooltip.bp4-dark &,
+  .bp4-dark .bp4-tooltip & {
     color: #314354;
   }
 `

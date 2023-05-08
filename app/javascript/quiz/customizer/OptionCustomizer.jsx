@@ -22,11 +22,11 @@ function OptionCustomizer (
   ref
 ) {
   return (
-    <div className="bp3-control-group bp3-fill">
+    <div className="bp4-control-group bp4-fill">
       <GroupedRadio
         value={option}
         checked={checked}
-        className="bp3-fixed"
+        className="bp4-fixed"
         onChange={(e: SyntheticInputEvent<*>) => {
           if (e.target.checked) onCheck()
         }}
@@ -40,7 +40,7 @@ function OptionCustomizer (
         rightElement={
           <Button
             intent={Intent.DANGER}
-            className="bp3-minimal"
+            className="bp4-minimal"
             icon="delete"
             onClick={onRemove}
           />
@@ -83,7 +83,7 @@ const GroupedRadio = styled(Radio)`
   font-weight: 400;
   transition: box-shadow 100ms cubic-bezier(0.4, 1, 0.75, 0.9);
 
-  & > .bp3-control-indicator {
+  & > .bp4-control-indicator {
     margin: 7px;
   }
 `
