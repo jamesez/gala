@@ -171,7 +171,7 @@ export async function toggleEdgenote (
       intent: Intent.WARNING,
       message: (
         <span
-          className="pt-dark"
+          className="bp3-dark"
           dangerouslySetInnerHTML={{
             __html: intl.formatMessage({
               id: 'edgenotes.new.makeSelectionHtml',
@@ -213,7 +213,7 @@ export function addCitationEntity (
     intent: Intent.SUCCESS,
     message: (
       <span
-        className="pt-dark"
+        className="bp3-dark"
         dangerouslySetInnerHTML={{
           __html: intl.formatMessage({
             id: 'cards.edit.citationAdded',

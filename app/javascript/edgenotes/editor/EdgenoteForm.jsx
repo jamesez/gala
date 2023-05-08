@@ -114,7 +114,7 @@ const EdgenoteForm = ({
       <Field
         name="altText"
         label="activerecord.attributes.edgenote.altText"
-        intent={(contents.altText && !!contents.altText.length) ? '' : 'pt-intent-danger'}
+        intent={(contents.altText && !!contents.altText.length) ? '' : 'bp3-intent-danger'}
         helperText={
           <Markdown
             source={intl.formatMessage({
@@ -130,7 +130,7 @@ const EdgenoteForm = ({
       <Field
         name="photoCredit"
         label="activerecord.attributes.edgenote.photoCredit"
-        intent={!!contents.photoCredit.length ? '' : 'pt-intent-danger'}
+        intent={!!contents.photoCredit.length ? '' : 'bp3-intent-danger'}
         render={props => <Input {...props} />}
         helperText={
           <Markdown
@@ -253,7 +253,7 @@ const Field = ({
   </FormGroup>
 )
 
-const Input = styled.input.attrs({ className: 'pt-input pt-fill' })``
+const Input = styled.input.attrs({ className: 'bp3-input bp3-fill' })``
 const TextArea = Input.withComponent('textarea')
 
 const FileField = (
@@ -269,7 +269,7 @@ const FileField = (
       <Field
         {...props}
         render={({ disabled, placeholder }) => (
-          <label className="pt-file-input pt-fill">
+          <label className="bp3-file-input bp3-fill">
             <input
               accept={props.accept}
               type="file"
@@ -278,7 +278,7 @@ const FileField = (
                 props.onChangeAttachment(props.name, e.target.files)
               }
             />
-            <span className="pt-file-upload-input">
+            <span className="bp3-file-upload-input">
               {fileList && fileList.length > 0
                 ? fileList.item(0).name
                 : placeholder}
@@ -326,7 +326,7 @@ const shouldDisable = (
   iconSlug: !Attachment.truthy(contents.fileUrl),
 
   caption: false,
-  
+
 })
 
 
@@ -334,15 +334,15 @@ const Row = styled.div`
   display: flex;
   align-items: flex-start;
 
-  .pt-form-group label.pt-label:empty {
+  .bp3-form-group label.bp3-label:empty {
     margin-bottom: 0;
   }
 
-  .pt-form-group {
+  .bp3-form-group {
     flex: 1;
   }
 
-  .pt-button {
+  .bp3-button {
     margin: 0 0 15px 6px;
   }
 `

@@ -168,7 +168,7 @@ const SidebarSubsectionTitle = styled(SectionTitle).attrs({ as: 'h3' })`
 `
 
 const SidebarButton = styled(Button).attrs({
-  className: 'pt-minimal pt-button--baseline-aligned',
+  className: 'bp3-minimal bp3-button--baseline-aligned',
 })`
   margin-right: -10px;
   z-index: 1;

@@ -110,7 +110,7 @@ function StatusBar ({
                   spotlightKey: 'add_collaborators',
                 }
               : {
-                  className: selecting && 'pt-intent-success',
+                  className: selecting && 'bp3-intent-success',
                   message: 'deployments.new.teachThisCase',
                   icon: 'follower',
                   onClick: selecting
