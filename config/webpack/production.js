@@ -1,7 +1,5 @@
-const merge = require('webpack-merge')
+process.env.NODE_ENV = process.env.NODE_ENV || 'production'
+
 const environment = require('./environment')
 
-// Our code is open source anyway and I hate debugging otherwise
-const sourceMap = { devtool: 'source-map' }
-
-module.exports = merge(environment.toWebpackConfig(), sourceMap)
+module.exports = environment.toWebpackConfig()
